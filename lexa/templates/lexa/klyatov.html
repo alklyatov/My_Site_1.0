@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>THE WORLD IS GONNA ROLE ME</title>
+  </head>
+  <body>
+	<p align = "center"> <font size="7" color="red" face="Arial">SALAM ALEYKUM ITS PAGE_2 </font></p>
+	<p align = "center"><a href="/lexa/leshka">GO TO Страница 1</a></p>
+
+	<b> IPISHKA:</b> {{ip}}
+
+	<p><b> INFORMATSIA O YOUR SISTEMA: </b>{{user_info}}</p>
+
+	<b> Razreshenie:</b> <p id = "1"></p>
+	<script>
+	function getResol(){
+		var w = screen.width
+		var h = screen.height
+		var z = w + "x" + h
+		z1 = document.getElementById('1')
+		z1.innerHTML = z
+	}
+	getResol()
+	</script>
+
+	<p><b> Your Brouser:</b></p>
+	<p id = "2" ></p>
+
+	<script>
+		var code = navigator.appCodeName
+		code1 = document.getElementById('2')
+		code1.innerHTML = code
+	</script>
+
+	<p><b> Your OS:</b></p>
+	<p id = "3" ></p>
+	<script>
+		var platform = navigator.platform
+		platform1 = document.getElementById('3')
+		platform1.innerHTML = platform
+	</script>
+
+	<p><b> Language of your sistem:</b></p>
+	<p id = "4"></p>
+	<script>
+		var UserLang = navigator.language || navigator.userLanguage;
+		UserLang1 = document.getElementById('4')
+		UserLang1.innerHTML = UserLang
+	</script>
+
+	<p><b> Cookies:</b></p>
+	<p id = "5" ></p>
+	<script>
+		var coock = navigator.cookieEnabled
+		coock1 = document.getElementById('5')
+		coock1.innerHTML = coock
+	</script>
+
+
+	<p ><b> Name of platform your brauser:</b></p>
+	<p id = "6"></p>
+	<script>
+		var name = navigator.appName
+		name1 = document.getElementById('6')
+		name1.innerHTML = name
+	</script>
+
+	<p><b> Version Brouser's:</b></p>
+	<p id = "7"></p>
+	<script>	
+		var version = navigator.appVersion
+		version1 = document.getElementById('7')
+		version1.innerHTML = version
+	</script>
+    </body>
+</html>
